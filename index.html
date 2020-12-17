@@ -35,6 +35,12 @@
             display: flex;
             justify-content: center;
         }
+        .container_tasks{
+            width:100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
         img {
             width:20%;
             
@@ -75,6 +81,9 @@
                    </span>
                 </li>
             </ul>
+            
+    <!-- Se non ci sono piu task nella lista, mostrate un messaggio tipo "Nulla da fare" -->
+            <h1 v-else>Hai completato i tuoi compiti!</h1>
         </div>
      
 
