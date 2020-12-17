@@ -58,8 +58,10 @@
            
         </div>
         <div class="input">
-            <input type="text">
-            <input type="submit" value="Add">
+            <form  @submit.prevent="AddNewTask">
+                <input type="text" v-model="newTask">
+                <input type="submit" value="Add">
+            </form>
         </div>
         <div class="container_todo">
             <h2>ToDo List</h2>
